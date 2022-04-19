@@ -150,3 +150,18 @@ def draw_triangles(
 
     ax.set_aspect("equal", adjustable="box")
     plt.show()  # show the plot
+
+
+def make_image(width, height, color=[0, 0, 0]):
+    """
+    Create a new image of the given width and height.
+    The image is filled with color.
+     Args:
+        width (int): width of the image
+        height (int): height of the image
+        color (list, optional): uniform color for initing the image. Defaults to [0,0,0] (black).
+
+    Returns:
+        list: the new image
+    """
+    return [[color for c in range(width)] for r in range(height)]  # only one line now!
